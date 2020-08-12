@@ -1,0 +1,7 @@
+*.obj
+*.pkl
+
+.idea/
+output*/
+models/
+__pycache__/
