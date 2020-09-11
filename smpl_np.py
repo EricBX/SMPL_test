@@ -203,7 +203,7 @@ class SMPLModel():
 
 if __name__ == '__main__':
   smpl = SMPLModel('./model.pkl')
-  np.random.seed(9708)
+  np.random.seed(6708)
   pose = (np.random.rand(*smpl.pose_shape) - 0.5) * 0.4
   beta = (np.random.rand(*smpl.beta_shape) - 0.5) * 0.06
   trans = np.zeros(smpl.trans_shape)

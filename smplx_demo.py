@@ -93,6 +93,7 @@ def main(model_folder, model_type='smplx', ext='npz',
         mesh.paint_uniform_color([0.3, 0.3, 0.3])
 
         o3d.visualization.draw_geometries([mesh])
+        o3d.io.write_triangle_mesh('./output/smplx_torch_neutral.ply', mesh)
     else:
         raise ValueError('Unknown plotting_module: {}'.format(plotting_module))
 
